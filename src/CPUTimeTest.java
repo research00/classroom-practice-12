@@ -1,3 +1,8 @@
+// the difference in performance is caused by the fact that ArrayList supports random access, which means that we can
+// directly access a specific object within the list using its index. LinkedList does not have such feature, since it
+// consists of nodes that store references for the next object (node), which leads to time complexity of an element
+// search to be O(n), instead of O(1) for ArrayList
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Random;
